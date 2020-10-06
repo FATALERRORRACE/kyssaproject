@@ -1,10 +1,14 @@
+import Vue from 'vue'
+import thought from "./components/ThoughtComponent.vue";
+import myForm from "./components/muform.vue";
+import myThoughts from "./components/myThoughtsComponent.vue";
+import axios from "axios";
+
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-
-require('./bootstrap');
 
 window.Vue = require('vue');
 
@@ -19,7 +23,9 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('Thought-component', require('./components/ThoughtComponent.vue').default);
+Vue.component('thought-component', thought);
+Vue.component('form-component', myForm);
+Vue.component('mythoughts-component', myThoughts);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

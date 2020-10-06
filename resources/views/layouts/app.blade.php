@@ -72,9 +72,7 @@
                 </div>
             </div>
         </nav>
-        <Thought-component></Thought-component>
-        <Thought-component>asdasd</Thought-component>
-
+        
 
         <main class="py-4">
             @yield('content')
